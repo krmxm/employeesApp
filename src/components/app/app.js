@@ -7,6 +7,14 @@ import EmployeesAddForm from '../employees-add-form/employees-add-form';
 import './app.css'; // используем Webpack
 
 function App() {
+
+    const data = [
+        {name: "John C.", salary: 800, increace: false},
+        {name: "Alex M.", salary: 3000, increace: true},
+        {name: "Carl W.", salary: 5000, increace: false}
+
+    ];
+    
     return (
         <div className="app">
             <AppInfo/>
@@ -16,7 +24,7 @@ function App() {
                 <AppFilter/>
             </div>
 
-            <EmployeesList/>
+            <EmployeesList data={data}/>
             <EmployeesAddForm/>
         </div>
     );

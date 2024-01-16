@@ -9,9 +9,9 @@ import './app.css'; // используем Webpack
 function App() {
 
     const data = [
-        {name: "John C.", salary: 800, increace: false},
-        {name: "Alex M.", salary: 3000, increace: true},
-        {name: "Carl W.", salary: 5000, increace: false}
+        {name: "John C.", salary: 800, increace: false, id: 1},
+        {name: "Alex M.", salary: 3000, increace: true, id: 2},
+        {name: "Carl W.", salary: 5000, increace: false, id: 3}
 
     ];
     
